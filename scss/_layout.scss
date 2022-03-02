@@ -46,6 +46,8 @@ body{
     overflow: hidden;
     background-image: url("../images/hero-bg.jpg");
     background-position: 0px 0px;
+    background-size: auto 200%;
+    background-repeat: no-repeat;
     animation: animatedBackground 15s linear infinite alternate;
         .hero-txt{
             display: flex;
