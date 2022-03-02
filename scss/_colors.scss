@@ -1,0 +1,45 @@
+// Variables de Colores
+$primary: rgb(27, 233, 55);
+$secondary: rgb(14, 14, 70);
+$black: rgb(56, 56, 73);
+$white: rgb(226, 226, 226);
+$bg-primary: rgb(23, 18, 36);
+$bg-secondary: rgb(31, 31, 61);
+
+.navbar *{
+    color: $white;
+}
+
+.footer{
+    color: $white;
+    background-color: $bg-secondary;
+}
+
+.page-index{
+    background-color: $bg-primary;
+    color: $white;
+}
+
+.index-hero{
+    color: $white;
+}
+
+.index-como{
+    background-color: $bg-secondary;
+}
+
+.index-blog{
+    .blog-text{
+        background-color: $bg-secondary;
+    }
+    .blog-img{
+    }
+}
+
+.index-newsletter{
+    .newsletter{
+        background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(229,70,252,1) 100%);    
+    }
+}
+
+

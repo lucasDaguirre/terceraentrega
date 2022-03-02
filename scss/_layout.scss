@@ -1,0 +1,112 @@
+body{
+    font-family: "Open Sans", sans-serif;
+}
+
+.contain{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.cover{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+// Nav & Footer Layout
+
+.header{
+    position: absolute;
+    width: 100vw;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: $p2;
+    padding: $p5;
+        .footer-btn{
+            display: flex;
+            gap: $p2;
+        }
+}
+
+// Index Layout
+
+.index-hero{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    padding: $p5;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-image: url("../images/hero-bg.jpg");
+    background-position: 0px 0px;
+    animation: animatedBackground 15s linear infinite alternate;
+        .hero-txt{
+            display: flex;
+            flex-direction: column;
+            gap: $p5;
+            animation: slide-t 1s ease-in;
+            animation-fill-mode: forwards;
+            h1{
+                font-size: 4rem;
+                font-weight: 400;
+            }
+            p{
+                font-size: 1.2rem;
+                font-weight: 200;
+            }
+            .btn-wrap{
+                display: flex;
+                gap: $p5;
+                .app-btn{
+                    height: 3rem;
+                }
+            }
+        }
+}
+
+.index-blog{
+    .blog-img{
+        overflow: hidden;
+    }
+}
+
+.index-newsletter{
+    .newsletter{
+        border-radius: 20px;
+    }
+}
+
+// Animaciones
+
+// Index
+
+@keyframes animatedBackground {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: 100% 0;
+    }
+  }
+
+@keyframes slide-t {
+0% {
+    transform: translateY(-100%);
+    opacity: 0;
+}
+
+100% {
+    transform: translateY(0%);
+    opacity: 1;
+}
+}
+
+  // Subpage (trading.html) Layout
+  

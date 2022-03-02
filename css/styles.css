@@ -1,0 +1,191 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  overflow-x: hidden;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+a, button {
+  all: unset;
+  cursor: pointer;
+}
+
+svg {
+  display: block;
+}
+
+.navbar * {
+  color: #e2e2e2;
+}
+
+.footer {
+  color: #e2e2e2;
+  background-color: #1f1f3d;
+}
+
+.page-index {
+  background-color: #171224;
+  color: #e2e2e2;
+}
+
+.index-hero {
+  color: #e2e2e2;
+}
+
+.index-como {
+  background-color: #1f1f3d;
+}
+
+.index-blog .blog-text {
+  background-color: #1f1f3d;
+}
+.index-newsletter .newsletter {
+  background: linear-gradient(90deg, #3f5efb 0%, #e546fc 100%);
+}
+
+.boton {
+  padding: 0.5rem;
+  background: none;
+  font-weight: 100;
+  border-radius: 1rem;
+  border: 1px solid;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.contain {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.cover {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.header {
+  position: absolute;
+  width: 100vw;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1.5rem;
+}
+.footer .footer-btn {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.index-hero {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  padding: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-image: url("../images/hero-bg.jpg");
+  background-position: 0px 0px;
+  animation: animatedBackground 15s linear infinite alternate;
+}
+.index-hero .hero-txt {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  animation: slide-t 1s ease-in;
+  animation-fill-mode: forwards;
+}
+.index-hero .hero-txt h1 {
+  font-size: 4rem;
+  font-weight: 400;
+}
+.index-hero .hero-txt p {
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+.index-hero .hero-txt .btn-wrap {
+  display: flex;
+  gap: 1.5rem;
+}
+.index-hero .hero-txt .btn-wrap .app-btn {
+  height: 3rem;
+}
+
+.index-blog .blog-img {
+  overflow: hidden;
+}
+
+.index-newsletter .newsletter {
+  border-radius: 20px;
+}
+
+@keyframes animatedBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
+@keyframes slide-t {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
